@@ -1,268 +1,331 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
+  <head>
     <!-- Judyta Patoka -->
     <meta charset="utf-8" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="container-header">
-            <nav class="navigation">
-                <a href="#" class="logo"><span>Web</span>Studio</a>
-                <ul class="navigation-list">
-                    <li>
-                        <a href="index.html">Agencja</a>
-                    </li>
-                    <li>
-                        <a class="navigation-active" href="#">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#">Kontakt</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="contact">
-                <a class="e-mail" href="mailto:info@devstudio.com">
-                    <svg class="icon-envelope" width="16" height="12">
-                        <use href="images/symbol-defs.svg#envelope"></use>
-                    </svg>
-                    <p>
-                        info@devstudio.com
-                    </p>
-                </a>
-                <a class="phone" href="tel:+48111111111">
-                    <svg class="icon-smartphone" width="10" height="16">
-                        <use href="images/symbol-defs.svg#smartphone"></use>
-                    </svg>
-                    <p>
-                        +48 111 111 111
-                    </p>
-                </a>
-            </div>
+      <div class="header__container">
+        <nav class="navigation">
+          <a href="#" class="logo"><span>Web</span>Studio</a>
+          <ul class="navigation__list">
+            <li>
+              <a href="index.html">Agencja</a>
+            </li>
+            <li>
+              <a class="navigation__active" href="#">Portfolio</a>
+            </li>
+            <li>
+              <a href="#">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="contact">
+          <a class="contact__e-mail" href="mailto:info@devstudio.com">
+            <svg class="contact__e-mail-icon" width="16" height="12">
+              <use href="images/symbol-defs.svg#envelope"></use>
+            </svg>
+            <p>info@devstudio.com</p>
+          </a>
+          <a class="contact__phone" href="tel:+48111111111">
+            <svg class="contact__phone-icon" width="10" height="16">
+              <use href="images/symbol-defs.svg#smartphone"></use>
+            </svg>
+            <p>+48 111 111 111</p>
+          </a>
         </div>
+      </div>
     </header>
     <main>
-        <section class="showcase-menu">
-            <ul>
-                <li><input class="button-portfolio button-portfolio-active" type="button" value="Wszystkie"></li>
-                <li><input class="button-portfolio" type="button" value="Strony"></li>
-                <li><input class="button-portfolio" type="button" value="Aplikacje"></li>
-                <li><input class="button-portfolio" type="button" value="Dizajn"></li>
-                <li><input class="button-portfolio" type="button" value="Marketing"></li>
-            </ul>
-        </section>
-        <section class="portfolio-showcase">
-            <ul class="portfolio-description">
-                <li>
-                    <img src="images/Portfolio/Technocrack.jpg"
-                        alt="Laptop ze stroną powitalną z napisem Our people make the difference" width="370"
-                        height="294">
-                    <div class="portfolio-showcase-item">
-                        <div class="portfolio-showcase-details">
-                            Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy
-                            wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery
-                            konkurencji
-                        </div>
-                    </div>
-                    <div class="portfolio-showcase-title">
-                        <h5>Technocrack</h5>
-                        <p>Strona internetowa</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="images/Portfolio/Basketball.jpg"
-                        alt="Grafika z dwoma koszykarzami w skoku walczącymi o piłkę." width="370" height="294">
-                    <div class="portfolio-showcase-item">
-                        <div class="portfolio-showcase-details">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aliquid modi totam provident,
-                            exercitationem molestiae fugiat alias, quia magni ipsa maxime dolorem repellat quas
-                            aspernatur recusandae quam? Iste, pariatur reiciendis.
-                        </div>
-                    </div>
-                    <div class="portfolio-showcase-title">
-                        <h5>Grafika New Orlean vs Golden Star</h5>
-                        <p>Dizajn</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="images/Portfolio/Seafood.jpg"
-                        alt="Czarne logo restauracji Seafood na tle wyszarzonej ryby." width="370" height="294">
-                    <div class="portfolio-showcase-item">
-                        <div class="portfolio-showcase-details">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aliquid modi totam provident,
-                            exercitationem molestiae fugiat alias, quia magni ipsa maxime dolorem repellat quas
-                            aspernatur recusandae quam? Iste, pariatur reiciendis.
-                        </div>
-                    </div>
-                    <div class="portfolio-showcase-title">
-                        <h5>Restauracja Seafood</h5>
-                        <p>Aplikacja</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="images/Portfolio/Prime.jpg" alt="Czarne słuchawki nauszne na białym tle." width="370"
-                        height="294">
-                    <div class="portfolio-showcase-item">
-                        <div class="portfolio-showcase-details">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aliquid modi totam provident,
-                            exercitationem molestiae fugiat alias, quia magni ipsa maxime dolorem repellat quas
-                            aspernatur recusandae quam? Iste, pariatur reiciendis.
-                        </div>
-                    </div>
-                    <div class="portfolio-showcase-title">
-                        <h5>Projekt Prime</h5>
-                        <p>Marketing</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="images/Portfolio/Boxes.jpg" alt="Dwa pudełka z minimalistycznym designem na białym tle."
-                        width="370" height="294">
-                    <div class="portfolio-showcase-item">
-                        <div class="portfolio-showcase-details">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aliquid modi totam provident,
-                            exercitationem molestiae fugiat alias, quia magni ipsa maxime dolorem repellat quas
-                            aspernatur recusandae quam? Iste, pariatur reiciendis.
-                        </div>
-                    </div>
-                    <div class="portfolio-showcase-title">
-                        <h5>Projekt Boxes</h5>
-                        <p>Aplikacja</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="images/Portfolio/NoBorders.jpg"
-                        alt="Monitor z wyświetlonym projektem czarnej strony z mapą świata." width="370" height="294">
-                    <div class="portfolio-showcase-item">
-                        <div class="portfolio-showcase-details">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aliquid modi totam provident,
-                            exercitationem molestiae fugiat alias, quia magni ipsa maxime dolorem repellat quas
-                            aspernatur recusandae quam? Iste, pariatur reiciendis.
-                        </div>
-                    </div>
-                    <div class="portfolio-showcase-title">
-                        <h5>Inspiration has no Borders</h5>
-                        <p>Strona internetowa</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="images/Portfolio/Limited.jpg"
-                        alt="Otwarty magazyn papierowy ze zdjęciami i napisem I'm limited edition." width="370"
-                        height="294">
-                    <div class="portfolio-showcase-item">
-                        <div class="portfolio-showcase-details">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aliquid modi totam provident,
-                            exercitationem molestiae fugiat alias, quia magni ipsa maxime dolorem repellat quas
-                            aspernatur recusandae quam? Iste, pariatur reiciendis.
-                        </div>
-                    </div>
-                    <div class="portfolio-showcase-title">
-                        <h5>Magazyn Limited Edition</h5>
-                        <p>Dizajn</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="images/Portfolio/LAB.jpg"
-                        alt="Zbliżenie na białą metkę z napisem LAB EL TAG zawieszonej na jasnym sznurku." width="370"
-                        height="294">
-                    <div class="portfolio-showcase-item">
-                        <div class="portfolio-showcase-details">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aliquid modi totam provident,
-                            exercitationem molestiae fugiat alias, quia magni ipsa maxime dolorem repellat quas
-                            aspernatur recusandae quam? Iste, pariatur reiciendis.
-                        </div>
-                    </div>
-                    <div class="portfolio-showcase-title">
-                        <h5>Projekt LAB</h5>
-                        <p>Marketing</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="images/Portfolio/GrowingBusiness.jpg"
-                        alt="Otwarty laptop z prezentacją aplikacji Growing Business." width="370" height="294">
-                    <div class="portfolio-showcase-item">
-                        <div class="portfolio-showcase-details">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aliquid modi totam provident,
-                            exercitationem molestiae fugiat alias, quia magni ipsa maxime dolorem repellat quas
-                            aspernatur recusandae quam? Iste, pariatur reiciendis.
-                        </div>
-                    </div>
-                    <div class="portfolio-showcase-title">
-                        <h5>Growing Business</h5>
-                        <p>Aplikacja</p>
-                    </div>
-                </li>
-            </ul>
-        </section>
+      <section class="portfolio-menu">
+        <ul>
+          <li>
+            <input
+              class="button button__portfolio button__portfolio-active"
+              type="button"
+              value="Wszystkie"
+            />
+          </li>
+          <li>
+            <input class="button button__portfolio" type="button" value="Strony" />
+          </li>
+          <li>
+            <input class="button button__portfolio" type="button" value="Aplikacje" />
+          </li>
+          <li>
+            <input class="button button__portfolio" type="button" value="Dizajn" />
+          </li>
+          <li>
+            <input class="button button__portfolio" type="button" value="Marketing" />
+          </li>
+        </ul>
+      </section>
+      <section class="portfolio-showcase">
+        <ul class="portfolio-showcase__list">
+          <li class="portfolio-showcase__item">
+            <img
+              src="images/Portfolio/Technocrack.jpg"
+              alt="Laptop ze stroną powitalną z napisem Our people make the difference"
+              width="370"
+              height="294"
+            />
+            <div class="portfolio-showcase__description">
+              <div class="portfolio-showcase__details">
+                Technocrack jest popularną platformą wykorzystywaną do
+                rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę
+                do celów szpiegowskich i ataków na niezabezpieczone serwery
+                konkurencji
+              </div>
+            </div>
+            <div class="portfolio-showcase__title">
+              <h5>Technocrack</h5>
+              <p>Strona internetowa</p>
+            </div>
+          </li>
+          <li class="portfolio-showcase__item">
+            <img
+              src="images/Portfolio/Basketball.jpg"
+              alt="Grafika z dwoma koszykarzami w skoku walczącymi o piłkę."
+              width="370"
+              height="294"
+            />
+            <div class="portfolio-showcase__description">
+              <div class="portfolio-showcase__details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                aliquid modi totam provident, exercitationem molestiae fugiat
+                alias, quia magni ipsa maxime dolorem repellat quas aspernatur
+                recusandae quam? Iste, pariatur reiciendis.
+              </div>
+            </div>
+            <div class="portfolio-showcase__title">
+              <h5>Grafika New Orlean vs Golden Star</h5>
+              <p>Dizajn</p>
+            </div>
+          </li>
+          <li class="portfolio-showcase__item">
+            <img
+              src="images/Portfolio/Seafood.jpg"
+              alt="Czarne logo restauracji Seafood na tle wyszarzonej ryby."
+              width="370"
+              height="294"
+            />
+            <div class="portfolio-showcase__description">
+              <div class="portfolio-showcase__details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                aliquid modi totam provident, exercitationem molestiae fugiat
+                alias, quia magni ipsa maxime dolorem repellat quas aspernatur
+                recusandae quam? Iste, pariatur reiciendis.
+              </div>
+            </div>
+            <div class="portfolio-showcase__title">
+              <h5>Restauracja Seafood</h5>
+              <p>Aplikacja</p>
+            </div>
+          </li>
+          <li class="portfolio-showcase__item">
+            <img
+              src="images/Portfolio/Prime.jpg"
+              alt="Czarne słuchawki nauszne na białym tle."
+              width="370"
+              height="294"
+            />
+            <div class="portfolio-showcase__description">
+              <div class="portfolio-showcase__details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                aliquid modi totam provident, exercitationem molestiae fugiat
+                alias, quia magni ipsa maxime dolorem repellat quas aspernatur
+                recusandae quam? Iste, pariatur reiciendis.
+              </div>
+            </div>
+            <div class="portfolio-showcase__title">
+              <h5>Projekt Prime</h5>
+              <p>Marketing</p>
+            </div>
+          </li>
+          <li class="portfolio-showcase__item">
+            <img
+              src="images/Portfolio/Boxes.jpg"
+              alt="Dwa pudełka z minimalistycznym designem na białym tle."
+              width="370"
+              height="294"
+            />
+            <div class="portfolio-showcase__description">
+              <div class="portfolio-showcase__details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                aliquid modi totam provident, exercitationem molestiae fugiat
+                alias, quia magni ipsa maxime dolorem repellat quas aspernatur
+                recusandae quam? Iste, pariatur reiciendis.
+              </div>
+            </div>
+            <div class="portfolio-showcase__title">
+              <h5>Projekt Boxes</h5>
+              <p>Aplikacja</p>
+            </div>
+          </li>
+          <li class="portfolio-showcase__item">
+            <img
+              src="images/Portfolio/NoBorders.jpg"
+              alt="Monitor z wyświetlonym projektem czarnej strony z mapą świata."
+              width="370"
+              height="294"
+            />
+            <div class="portfolio-showcase__description">
+              <div class="portfolio-showcase__details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                aliquid modi totam provident, exercitationem molestiae fugiat
+                alias, quia magni ipsa maxime dolorem repellat quas aspernatur
+                recusandae quam? Iste, pariatur reiciendis.
+              </div>
+            </div>
+            <div class="portfolio-showcase__title">
+              <h5>Inspiration has no Borders</h5>
+              <p>Strona internetowa</p>
+            </div>
+          </li>
+          <li class="portfolio-showcase__item">
+            <img
+              src="images/Portfolio/Limited.jpg"
+              alt="Otwarty magazyn papierowy ze zdjęciami i napisem I'm limited edition."
+              width="370"
+              height="294"
+            />
+            <div class="portfolio-showcase__description">
+              <div class="portfolio-showcase__details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                aliquid modi totam provident, exercitationem molestiae fugiat
+                alias, quia magni ipsa maxime dolorem repellat quas aspernatur
+                recusandae quam? Iste, pariatur reiciendis.
+              </div>
+            </div>
+            <div class="portfolio-showcase__title">
+              <h5>Magazyn Limited Edition</h5>
+              <p>Dizajn</p>
+            </div>
+          </li>
+          <li class="portfolio-showcase__item">
+            <img
+              src="images/Portfolio/LAB.jpg"
+              alt="Zbliżenie na białą metkę z napisem LAB EL TAG zawieszonej na jasnym sznurku."
+              width="370"
+              height="294"
+            />
+            <div class="portfolio-showcase__description">
+              <div class="portfolio-showcase__details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                aliquid modi totam provident, exercitationem molestiae fugiat
+                alias, quia magni ipsa maxime dolorem repellat quas aspernatur
+                recusandae quam? Iste, pariatur reiciendis.
+              </div>
+            </div>
+            <div class="portfolio-showcase__title">
+              <h5>Projekt LAB</h5>
+              <p>Marketing</p>
+            </div>
+          </li>
+          <li class="portfolio-showcase__item">
+            <img
+              src="images/Portfolio/GrowingBusiness.jpg"
+              alt="Otwarty laptop z prezentacją aplikacji Growing Business."
+              width="370"
+              height="294"
+            />
+            <div class="portfolio-showcase__description">
+              <div class="portfolio-showcase__details">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                aliquid modi totam provident, exercitationem molestiae fugiat
+                alias, quia magni ipsa maxime dolorem repellat quas aspernatur
+                recusandae quam? Iste, pariatur reiciendis.
+              </div>
+            </div>
+            <div class="portfolio-showcase__title">
+              <h5>Growing Business</h5>
+              <p>Aplikacja</p>
+            </div>
+          </li>
+        </ul>
+      </section>
     </main>
     <footer class="footer">
-        <div class="container">
-            <div class="address-footer">
-                <a href="#" class="logo"><span>Web</span><span>Studio</span></a>
-                <address>
-                    m. Warszawa, Aleje Jerozolimskie 21
-                </address>
-                <p><a class="e-mail-footer" href="mailto:info@devstudio.com">info@devstudio.com</a></p>
-                <p><a class="phone-footer" href="tel:+48111111111">+48 111 111 111</a></p>
-            </div>
-            <div class="socials-footer">
-                <p>Dołącz do nas</p>
-                <ul class="social-media-list">
-                    <li class="social-media-item">
-                        <a href="#" class="social-media-link">
-                            <svg class="social-icon">
-                                <use href="images/symbol-defs.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-media-item">
-                        <a href="#" class="social-media-link">
-                            <svg class="social-icon">
-                                <use href="images/symbol-defs.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-media-item">
-                        <a href="#" class="social-media-link">
-                            <svg class="social-icon">
-                                <use href="images/symbol-defs.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-media-item">
-                        <a href="#" class="social-media-link">
-                            <svg class="social-icon">
-                                <use href="images/symbol-defs.svg#icon-linkedin2"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="newsletter-footer">
-                <h4>ZAPISZ SIĘ DO NEWSLETTERA</h4>
-                <form name="form-footer" class="form-footer">
-                    <label class="input-footer">
-                        <input class="inputbox-footer" type="email" name="email" placeholder="E-mail" validate>
-                    </label>
-                    <button type="submit" class="button-footer">
-                        Zapisz się
-                        <svg class="send-icon-footer" width="24" height="24">
-                            <use href="images/symbol-defs.svg#send"></use>
-                        </svg>
-                    </button>
-                </form>
-            </div>
+      <div class="footer__container">
+        <div class="footer__contact">
+          <a href="#" class="logo logo--footer">
+            <span>Web</span><span>Studio</span>
+          </a>
+          <address>m. Warszawa, Aleje Jerozolimskie 21</address>
+          <a class="footer__e-mail" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
+          <a class="footer__phone" href="tel:+48111111111"> +48 111 111 111 </a>
         </div>
+        <div class="join-us">
+          <h4 class="join-us__header">Dołącz do nas</h4>
+          <ul class="socials-list socials-list--footer">
+            <li class="socials-list__item">
+              <a href="#" class="socials-list__link">
+                <svg class="socials-list__icon">
+                  <use href="images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-list__item">
+              <a href="#" class="socials-list__link">
+                <svg class="socials-list__icon">
+                  <use href="images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-list__item">
+              <a href="#" class="socials-list__link">
+                <svg class="socials-list__icon">
+                  <use href="images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-list__item">
+              <a href="#" class="socials-list__link">
+                <svg class="socials-list__icon">
+                  <use href="images/symbol-defs.svg#icon-linkedin2"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="newsletter">
+          <h4>ZAPISZ SIĘ DO NEWSLETTERA</h4>
+          <form name="newsletter__form" class="newsletter__form">
+            <label>
+              <input
+                class="newsletter__input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                validate
+              />
+            </label>
+            <button type="submit" class="button button__footer">
+              Zapisz się
+              <svg class="newsletter__icon" width="24" height="24">
+                <use href="images/symbol-defs.svg#send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
