@@ -81,7 +81,7 @@
       left: 15px;
     }
 
-    &:focus + .modal__inputbox-icon,
+    &:focus + &-icon,
     &:focus {
       fill: var(--main-color);
       outline: none;
@@ -107,7 +107,7 @@
     }
   }
 
-  &__policy-check-icon:checked + &__policy-text::before{
+  &__policy-check-icon:checked + &__policy-text::before {
     background-color: var(--main-color);
     border-color: var(--main-color);
     border-radius: 2px;
